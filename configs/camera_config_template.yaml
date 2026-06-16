@@ -1,0 +1,14 @@
+# Camera configuration template
+camera_name: "example_hyperspectral_camera"
+sensor_type: "VNIR"  # VNIR, NIR, SWIR, etc.
+wavelength_range_nm: [400, 1000]
+number_of_bands: null
+spectral_resolution_nm: null
+exposure_time: null
+integration_time: null
+scan_speed: null
+lens: null
+illumination_type: "controlled_lab_light"
+white_reference: "white_reference_panel"
+dark_reference: "lens_cap_or_shutter_closed"
+notes: "Keep all settings fixed during one experiment."

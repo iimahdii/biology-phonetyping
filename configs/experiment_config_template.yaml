@@ -1,0 +1,18 @@
+# Experiment configuration template
+project_name: "duckweed_hyperspectral_change_detection"
+organism: "duckweed"
+control_group: "wild_type_or_mock_treated"
+changed_group: "edited_line_or_treated_group"
+time_points:
+  - day0
+  - 24h
+  - 48h
+  - 72h
+  - 7d
+biological_replicates_per_group: 30
+independent_batches: 3
+randomize_plate_positions: true
+segmentation_target: "plant_pixels_only"
+validation_strategy: "split_by_batch_or_plate_not_pixel"
+primary_task: "classification_or_change_detection"
+secondary_task: "wavelength_importance_and_biological_explanation"
